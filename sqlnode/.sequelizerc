@@ -1,0 +1,8 @@
+// Preciso informar as credenciais de acesso pro sequelize
+// path = do node, bom para lidar com caminhos, começo com __dirname(onde to) e a cara , é uma pasta a +
+const path = require('path')
+
+module.exports = {
+    config: path.resolve(__dirname, 'src', 'config', 'database.js'),
+    'migrations-path': path.resolve(__dirname, 'src', 'database', 'migrations')
+}
